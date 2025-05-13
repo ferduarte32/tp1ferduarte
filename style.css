@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* normalizacion de los estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+:root {
+  --violeta1-800: #2f1c6a;
+  --violeta-500: #673de6;
+  --violeta-1000: #1f1346;
+
+}
+body{
+  max-width: 2000px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.nav-rep {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  padding: 29px 0 29px 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d1e20;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: var(--violeta1-800);
+}
+
+.idioma-login {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+
+}
+
+.contenedoridioma {
+  display: flex;
+  gap: 4px;
+}
+
+.banderita {
+  display: flex;
+  width: 32px;
+}
+
+.btn-idioma {
+  display: flex;
+  all: unset;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1d1e20;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-login {
+  all: unset;
+  cursor: pointer;
+  padding: 12px 14px;
+  border: 2px solid var(--violeta1-800);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--violeta1-800);
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.menulineas {
+  display: none;
+}
+
+
+
+
+/* css para la seccion Hero*/
+span {
+  font-weight: 700;
+  color: var(--violeta1-800);
+}
+
+.span72 {
+  font-weight: 700;
+  color: var(--violeta-500);
+}
+
+p {
+  margin-top: 8px;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--violeta1-800);
+}
+
+.contenedorhero {
+  display: flex;
+  max-width: 1280px;
+  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 24px;
+  margin: 0 auto;
+}
+
+.tarjetaweb {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.heroimagen {
+
+  width: 100%;
+  max-width: 768px;
+  height: auto;
+  display: block;
+  flex: 2;
+}
+
+.heroimagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: start;
+  color: var(--violeta1-800);
+}
+
+.tarjetaherotitulo {
+  margin-bottom: 24px;
+  color: var(--violeta1-800);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tarjetaherosevicios {
+  color: var(--violeta1-800);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjetadeserviciocol {
+  display: flex;
+  color: var(--violeta1-800);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: start;
+}
+
+.veneta {
+  color: #00b090;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tarjetaprecio {
+  padding-top: 40px;
+}
+
+.spanar {
+  line-height: 24px;
+}
+
+.spanprecio {
+  font-size: 48px;
+}
+
+.tarjetamesgratis {
+  vertical-align: baseline;
+}
+
+.botontarjetaempezar {
+  background-color: var(--violeta-500);
+  border: 2px solid var(--violeta-500);
+  color: white;
+  width: auto;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  line-height: 1;
+  min-height: 48px;
+  padding: 12px 48px;
+  position: relative;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.tarjetabotones {
+  display: flex;
+  gap: 12px;
+}
+
+.tarjetacuenta {
+  width: auto;
+  border-radius: 8px;
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  min-width: 160px;
+  background-color: #c5b8f8;
+  align-items: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--violeta1-800);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  border: none;
+}
+
+/* seccion migrar sitio*/
+.migracioncontenedor {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--violeta-1000);
+  padding: 80px;
+}
+
+.migracioncontenedor h2 {
+  font-size: 36px;
+  color: white;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+}
+
+.migracioncontenedor p {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.contenedortarjetamigracion {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.migraciontarjeta {
+  flex: 1;
+  display: flex;
+  background-color: var(--violeta1-800);
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 10px;
+  justify-content: start;
+
+}
+
+.tarjetaicono {
+  height: 35px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: var(--violeta-500);
+  padding: 10px 7px;
+  color: white;
+}
+
+.tarjetatitulo p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.tarjatadescripcion p {
+  text-align: left;
+}
+
+.boton {
+  margin: 20px auto;
+  padding: 12px 48px;
+  display: inline-flex;
+  background-color: var(--violeta-500);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  text-align: center;
+}
+
+.boton a {
+  color: white;
+  font-weight: 700;
+}
+
+
+
+footer {
+  padding: 56px;
+}
+
+.footercontendor {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  margin-top: 24px;
+
+}
+
+.footerlogo {
+  color: var(--violeta1-800);
+  width: 147px;
+}
+
+.footersocial {
+  display: flex;
+  height: 32px;
+  gap: 16px;
+  color: var(--violeta1-800)
+}
+
+.fotertarjeta {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+}
+.fotertarjeta img{
+  border-radius: 6px;
+  height: 40px;
+  width: 60px;
+}
+
+.footerlink{
+  display: flex;
+  gap: 8px;
+  flex: 1;
+
+}
+.footercontendor p{
+  font-size: 14px;
+}
+
+
+
+
+
+
+/* parte reponsive */
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+
+  .idioma-login {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    padding: 0;
+
+  }
+
+  .menulineas {
+    display: flex;
+    font-size: 28px;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+
+  .nav-rep {
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    width: auto;
+  }
+
+  .contenedorherocolumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedorhero {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+
+
+  .contenedortarjetamigracion {
+    flex-direction: column;
+  }
+
+  .footercontendor{
+    flex-direction: column;
+  }
+  .footerlogo {
+    order: 2;
+  }
+  
+  .footersocial {
+    order: 1;
+  }
+  
+  .fotertarjeta {
+    order: 2;
+  }
+
+  .footerlink{
+    order: 1;
+
+  }  
+}
